@@ -1,0 +1,522 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.head{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 15vw;
+    box-shadow: 0 7px 5px -3px rgba(200, 200, 200, 0.5), 0 7px 5px -3px rgba(200, 200, 200, 0.5);
+}
+.image{
+    position: relative;
+    float: left;
+    margin: 1%;
+    margin-left: 7%;
+    margin-top: 3%;
+    width: 8vw;
+    height: 8vw;
+    background-image: url('../images/city.png');
+    background-size: 100% 100%;    
+}
+.title
+{
+    color: red;
+    font-family: unset;
+    font-style: bold;
+    position: relative;
+    float: left;
+    margin: 5%;
+    margin-left: 4%;
+    font-size: 5vw;
+   
+}
+.menu
+{
+    width: 100%;
+    font-size: 20px;
+}
+.menu ul{
+    width: 100%;
+    display:inline-flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+} 
+.menu ul li a{
+        padding: 15px;
+        color: black;
+        text-decoration: none;
+    }
+
+@media screen and (max-width:1000px) and (min-width:501px) 
+{
+    .flex{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .body-container{
+        width:50%;
+        order:1;
+    }
+    .top-news{
+        width:100%;
+        order:3;
+    }
+    .tab{
+        width:100%;
+        order:4;
+    }
+    .climate-container{
+        width:50%;
+        order: 2;
+    }
+    .body-container{
+       /*width:100% */
+        background-image: url("images/dog.jpg") ;
+        background-size: 100% 50vw;
+        position: relative;
+       /* height: 50vw;*/
+        max-height: 350px;        
+    }
+    .overlay{
+        color:white;
+        font-weight:bold;
+        position: absolute;
+        background-color:rgba(10,10,10,0.8);
+        width: 100%;
+        bottom: 0;
+        text-align: left;
+        opacity: 0.8;
+        font-size: 1.5vm;
+        max-height: 150px;
+    
+    }
+    .overlay p{
+        font-size: 1.5vw;
+        padding:0 2vw;
+    }
+    .overlay h2{
+        font-size: 2vw;
+        padding: 0 2vw;
+    }
+    .top-news{
+    
+        position: relative;
+        float: left;
+        width:100%;        
+    }
+    .top-news p{
+        padding: 10px;
+        border-bottom:1px solid gray;  
+        font-size:1.3em;	
+    }
+    .top-news p::before{
+        content: "<<";
+    }
+    
+    table.tab {
+        width:100%;
+        height:400px;
+        border-collapse: collapse;
+    }
+    table.tab th{
+        
+        padding: 15px;
+        text-align:left;    
+        position: relative;
+        font-size: 18px;
+     }
+    table.tab td{
+        
+        padding: 15px;
+        text-align:left;
+        position: relative;
+        margin-left: auto;
+    }
+    table.tab th{
+        background-color: darkgray;
+    }
+    
+    .climate-container{
+       /* width:100%;
+        height:450px;*/
+        margin: 0;
+    }
+    .weather{
+         /* padding: 10px;*/
+          float:left;    
+          
+    }  
+    .sun-ico{   
+        float: left;    
+      /* padding:20px 10px;*/
+    
+    }
+    .sunny{
+        margin-top: 0;
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    .weather-tab
+    {
+   /* width:100%;	*/
+    font-size: 1em;
+    }
+    .weather-tab th
+    {	
+        height:auto;    
+        position: relative;	
+        text-align:left;
+        font-size: 1em;
+        
+    }
+    .weather-tab img{
+        width:8vw;
+        height: 8vw;
+    }
+    .weather-tab td
+    {	
+        height:auto;
+        position: relative;	
+        text-align:left;
+        margin-left:auto;
+        margin-right:auto;
+        font-size: 1.3em;
+    }
+    .dog{
+        width:100%;
+        height: 300px;      
+    }   
+}
+
+@media screen and (max-width:500px) 
+{
+    .flex{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .body-container{
+        width:100%;
+        order:1;
+    }
+    .top-news{
+        width:100%;
+        order:2;
+    }
+    .tab{
+        width:100%;
+        order:3;
+    }
+    .climate-container{
+        width:100%;
+        order: 4;
+    }
+    .body-container{
+       width:100% ;
+        background-image: url("images/dog.jpg") ;
+        background-size: 100% auto;
+        position: relative;
+        height: 50vw;
+        max-height: 350px;        
+    }
+    .overlay{
+        color:white;
+        font-weight:bold;
+        position: absolute;
+        background-color:rgba(10,10,10,0.8);
+        width: 100%;
+        bottom: 0;
+        text-align: left;
+        opacity: 0.8;
+        font-size: 1.5vm;
+        max-height: 150px;
+    
+    }
+    .overlay p{
+        font-size: 1.5vw;
+        padding:0 2vw;
+    }
+    .overlay h2{
+        font-size: 2vw;
+        padding: 0 2vw;
+    }
+    .top-news{
+    
+        position: relative;
+        float: left;
+        width:100%;        
+    }
+    .top-news p{
+        padding: 10px;
+        border-bottom:1px solid gray;  
+        font-size:1.3em;	
+    }
+    .top-news p::before{
+        content: "<<";
+    }
+    
+    table.tab {
+        width:100%;
+        height:400px;
+        border-collapse: collapse;
+    }
+    table.tab th{
+        
+        padding: 15px;
+        text-align:left;    
+        position: relative;
+        font-size:1.3em;
+     }
+    table.tab td{
+        
+        padding: 15px;
+        text-align:left;
+        position: relative;
+        margin-left: auto;
+    }
+    table.tab th{
+        background-color: darkgray;
+    }
+    
+    .climate-container{
+        width:100%;
+        height:450px;
+        margin: 0;
+    }
+    .weather{
+         padding: 10px;
+          float:left;    
+          
+    }  
+    .sun-ico{   
+        float: left;    
+       padding:20px 10px;
+    
+    }
+    .sunny{
+        margin-top: 0;
+        margin-left: 10px;
+    }
+    .weather-tab
+    {
+    width:100%;	
+   /*font-size: 2vw;*/
+    }
+    .weather-tab th
+    {	
+        height:auto;    
+        position: relative;	
+        text-align:left;
+        font-size:1.3em;
+        
+    }
+    .weather-tab img{
+        width:8vw;
+        height: 8vw;
+    }
+    .weather-tab td
+    {	
+        height:auto;
+        position: relative;	
+        text-align:left;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:1.3em;
+    }
+    .dog{
+        width:100%;
+        height: 300px;      
+    }   
+}
+@media screen and (min-width:1001px) 
+{
+    .flex{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .body-container{
+        width:100%;
+        order:1;
+    }
+    .top-news{
+        width:100%;
+        order:2;
+    }
+    .tab{
+        width:50%;
+        order:3;
+    }
+    .climate-container{
+        width:50%;
+        order: 4;
+    }
+    .body-container{
+        width:100%;
+        background-image: url("images/dog.jpg") ;
+        background-size: 100% auto;
+        position: relative;
+        height: 50vw;
+        max-height: 350px;        
+    }
+    .overlay{
+        color:white;
+        font-weight:bold;
+        position: absolute;
+        background-color:rgba(10,10,10,0.8);
+        width: 100%;
+        bottom: 0;
+        text-align: left;
+        opacity: 0.8;
+        font-size: 1.5vm;
+        max-height: 150px;
+    
+    }
+    .overlay p{
+        font-size: 1.5vw;
+        padding:0 2vw;
+    }
+    .overlay h2{
+        font-size: 2vw;
+        padding: 0 2vw;
+    }
+    .top-news{
+    
+        position: relative;
+        float: left;
+        width:100%;        
+    }
+    .top-news p{
+        padding: 10px;
+        border-bottom:1px solid gray;  
+        font-size:1.3em;	
+    }
+    .top-news p::before{
+        content: "<<";
+    }
+    
+    table.tab {
+       /* width:100%;*/
+        height:400px;
+        border-collapse: collapse;
+    }
+    table.tab th{
+        
+        padding: 15px;
+        text-align:left;    
+        position: relative;
+     }
+    table.tab td{
+        
+        padding: 15px;
+        text-align:left;
+        position: relative;
+        margin-left: auto;
+    }
+    table.tab th{
+        background-color: darkgray;
+    }
+    
+    .climate-container{
+       /* width:100%;
+        height:450px;*/
+        margin: 0;
+    }
+    .weather{
+         /* padding: 10px;*/
+          float:left;    
+          
+    }  
+    .sun-ico{   
+        float: left;    
+      /* padding:20px 10px;*/
+    
+    }
+    .sunny{
+        margin-top: 0;
+        margin-left: 10px;
+        font-size:1.3em;
+    }
+    .weather-tab
+    {
+   /* width:100%;	*/
+   font-size: 1vw;
+    }
+    .weather-tab th
+    {	
+        height:auto;    
+        position: relative;	
+        text-align:left;
+        
+        
+    }
+    .weather-tab img{
+        width:8vw;
+        height: 8vw;
+    }
+    .weather-tab td
+    {	
+        height:auto;
+        position: relative;	
+        text-align:left;
+        margin-left:auto;
+        margin-right:auto;
+    
+    }
+    .dog{
+        width:100%;
+        height: 300px;      
+    }   
+}
+
+
+
+
+.doggy{
+    width:30vw;    
+    height:20vw;
+    margin: 10px;
+}
+.text {
+    
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    padding-left: 5vw;
+    
+}
+
+.news{
+    border-bottom:1px solid gray; 
+ 
+
+}
+.latest{
+    
+    border-bottom:1px solid gray;    
+    width:100%;
+    display: inline-flex;
+}
+.lat-2
+{
+    border-bottom:1px solid gray;    
+    width:100%;
+    
+    display: inline-flex;
+}
+
+
+
+
+
+        
+
+    
